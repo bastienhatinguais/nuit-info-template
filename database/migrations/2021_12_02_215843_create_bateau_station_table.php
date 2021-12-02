@@ -15,8 +15,10 @@ class CreateBateauStationTable extends Migration
     {
         Schema::create('bateau_station', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('bateau_id')->constrained();
+            $table->foreignId('station_id')->constrained();
             $table->date("date_acquisition");
-            $table->date("date_remisation")->nullable();;
+            $table->date("date_remise")->nullable();;
             $table->timestamps();
 
         });
