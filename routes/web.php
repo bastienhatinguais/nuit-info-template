@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome', ['titre' => "Ceci est le titre"]);
 });
+
+
+Route::get('/back-office', [BackOfficeController::class, "afficher"]);
