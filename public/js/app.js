@@ -50,6 +50,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Filtre.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Filtre.vue?vue&type=script&lang=js& ***!
@@ -137,6 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+  
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TitreComponent.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TitreComponent.vue?vue&type=script&lang=js& ***!
@@ -227,7 +229,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var files = __webpack_require__("./resources/js sync recursive \\.vue$/");
 
+files.keys().map(function (key) {
+  return Vue.component(key.split("/").pop().split(".")[0], files(key)["default"]);
+});
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+var app = new Vue({
+  el: "#app"
+});
+
+/***/ }),
+
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+=======
 
 /* normalize component */
 ;
@@ -366,6 +394,45 @@ component.options.__file = "resources/js/components/TitreComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/TitreComponent.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/TitreComponent.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _TitreComponent_vue_vue_type_template_id_3a0adbb6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TitreComponent.vue?vue&type=template&id=3a0adbb6& */ "./resources/js/components/TitreComponent.vue?vue&type=template&id=3a0adbb6&");
+/* harmony import */ var _TitreComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TitreComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/TitreComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TitreComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TitreComponent_vue_vue_type_template_id_3a0adbb6___WEBPACK_IMPORTED_MODULE_0__.render,
+  _TitreComponent_vue_vue_type_template_id_3a0adbb6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/TitreComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -446,6 +513,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
+
 
 /***/ "./resources/js/components/Filtre.vue?vue&type=template&id=3365cc29&":
 /*!***************************************************************************!*\
@@ -535,6 +603,7 @@ render._withStripped = true
 
 /***/ }),
 
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Filtre.vue?vue&type=template&id=3365cc29&":
 /*!******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Filtre.vue?vue&type=template&id=3365cc29& ***!
@@ -551,6 +620,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+
   return _c("div", { staticClass: "relative" }, [
     _c("img", {
       staticClass: "w-8 h-auto cursor-pointer ",
@@ -12831,6 +12901,7 @@ Vue.compile = compileToFunctions;
 
 var map = {
 	"./components/ExampleComponent.vue": "./resources/js/components/ExampleComponent.vue",
+
 	"./components/Filtre.vue": "./resources/js/components/Filtre.vue",
 	"./components/Recherche.vue": "./resources/js/components/Recherche.vue",
 	"./components/TitreComponent.vue": "./resources/js/components/TitreComponent.vue"
