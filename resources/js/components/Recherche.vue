@@ -22,15 +22,7 @@
         <div class="pr-4 flex-1">
           <img
             src="\image\bouttonRecherche.png"
-            class="h-6 w-6 cursor-pointer"
-          />
-        </div>
-        <div class="pr-4 flex-1">
-          <img
-            class="w-6 h-auto cursor-pointer"
-            src="\image\flecheOuverture.png"
-            alt=""
-            @click="show"
+            class="mt-1 h-5 w-5 cursor-pointer"
           />
         </div>
       </div>

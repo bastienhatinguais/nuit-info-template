@@ -2,15 +2,15 @@
 
 @section('content')
 <div id="app">
-    <div class="grid grid-cols-1 justify-items-center">
+    <div class="grid grid-cols-1 justify-items-center mt-10">
         <!-- Barre de recherche -->
         <recherche></recherche>
 
         <!-- Resultats -->
-        <div class="w-200 h-100 mt-5 divide-y-6 space-y-5 divide-blue-500 divide-solid bg-yellow-100">
-            <resultat titre="Bateau pirate" type ="Bateau"></resultat>
-            <resultat titre="COUCOU" type ="Bateau"></resultat>
-            <resultat titre="Bateau pirate" type ="Bateau"></resultat>
+        <div class="mt-8 grid grid-cols-2 gap-5 bg-blue-300 px-20 py-5">
+            <resultat nom="Bateau" prenom= "pirate" type ="bateau"></resultat>
+            <resultat nom="COUCOU" prenom= "pirate" type ="civil"></resultat>
+            <resultat nom="Bateau" prenom= "pirate" type ="marin"></resultat>
 
         </div>
     </div>
