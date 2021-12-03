@@ -42,3 +42,7 @@ Route::get('/resultat-bateau', function () {
 'description' => "LaDescription"]);
 });
 
+
+Route::get('/home', function () {
+    return view('pages/page-recherche');
+});
