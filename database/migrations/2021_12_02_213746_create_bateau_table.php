@@ -20,6 +20,7 @@ class CreateBateauTable extends Migration
             $table->string('origine');
             $table->integer('dimension');
             $table->string('description')->nullable();
+            $table->boolean('est_valide');
             $table->timestamps();
         });
     }
